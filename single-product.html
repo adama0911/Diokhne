@@ -375,20 +375,20 @@
         						<div class="col-lg-6 col-12">
         							<div class="wn__fotorama__wrapper">
 	        							<div class="fotorama wn__fotorama__action" data-nav="thumbs">
-		        							  <a href="1.jpg"><img src="images/product/1.jpg" alt=""></a>
-		        							  <a href="2.jpg"><img src="images/product/2.jpg" alt=""></a>
-		        							  <a href="3.jpg"><img src="images/product/3.jpg" alt=""></a>
-		        							  <a href="4.jpg"><img src="images/product/4.jpg" alt=""></a>
-		        							  <a href="5.jpg"><img src="images/product/5.jpg" alt=""></a>
-		        							  <a href="6.jpg"><img src="images/product/6.jpg" alt=""></a>
-		        							  <a href="7.jpg"><img src="images/product/7.jpg" alt=""></a>
-		        							  <a href="8.jpg"><img src="images/product/8.jpg" alt=""></a>
+		        							  <a href="1.jpg"><img src="images/product/1.jpg" alt="" class="img_produit"></a>
+		        							  <a href="2.jpg"><img src="images/product/2.jpg" alt="" class="img_produit"></a>
+		        							  <a href="3.jpg"><img src="images/product/3.jpg" alt="" class="img_produit"></a>
+		        							  <a href="4.jpg"><img src="images/product/4.jpg" alt="" class="img_produit"></a>
+		        							  <a href="5.jpg"><img src="images/product/5.jpg" alt="" class="img_produit"></a>
+		        							  <a href="6.jpg"><img src="images/product/6.jpg" alt="" class="img_produit"></a>
+		        							  <a href="7.jpg"><img src="images/product/7.jpg" alt="" class="img_produit"></a>
+		        							  <a href="8.jpg"><img src="images/product/8.jpg" alt="" class="img_produit"></a>
 	        							</div>
         							</div>
         						</div>
         						<div class="col-lg-6 col-12">
         							<div class="product__info__main">
-        								<h1>Chaz Kangeroo Hoodie</h1>
+        								<h1 class="title_prod">Chaz Kangeroo Hoodie</h1>
         								<div class="product-reviews-summary d-flex">
         									<ul class="rating-summary d-flex">
     											<li><i class="zmdi zmdi-star-outline"></i></li>
@@ -399,17 +399,25 @@
         									</ul>
         								</div>
         								<div class="price-box">
-        									<span>$52.00</span>
+        									<span class="pro_prise">$52.00</span>
         								</div>
 										<div class="product__overview">
-        									<p>Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.</p>
+        									<p class="prod_desc">Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.</p>
         									<p>Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. </p>
+        								</div>
+        								<div class="box-tocart d-flex">
+        									<span>Téléphone</span>
+        									<input id="tel" class="input-text tel" name="qty" min="1" title="Qty" type="text">
+        								</div>
+        								<div class="box-tocart d-flex">
+        									<span>E-mail</span>
+        									<input id="email" class="input-text email" name="qty" min="1"  title="Qty" type="text">
         								</div>
         								<div class="box-tocart d-flex">
         									<span>Qty</span>
         									<input id="qty" class="input-text qty" name="qty" min="1" value="1" title="Qty" type="number">
         									<div class="addtocart__actions">
-        										<button class="tocart" type="submit" title="ajouter au panier">ajouter au panier</button>
+        										<button class="tocart" type="submit" title="ajouter au panier">Confirmer Achat</button>
         									</div>
 											<div class="product-addto-links clearfix">
 												<a class="wishlist" href="#"></a>
@@ -460,7 +468,7 @@
 	                        	<!-- Start Single Tab Content -->
 	                        	<div class="pro__tab_label tab-pane fade show active" id="nav-details" role="tabpanel">
 									<div class="description__attribute">
-										<p>Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.</p>
+										<p class="details_prod">Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.Ideal for cold-weather training or work outdoors, the Chaz Hoodie promises superior warmth with every wear. Thick material blocks out the wind as ribbed cuffs and bottom band seal in body heat.</p>
 										<ul>
 											<li>• Two-tone gray heather hoodie.</li>
 											<li>• Drawstring-adjustable hood. </li>
@@ -578,13 +586,13 @@
 							<div class="section__title text-center">
 								<h2 class="title__be--2">Produits associés</h2>
 							</div>
-							<div class="row mt--60">
+							<div class="row mt--60" id="produitsAssocies">
 								<div class="productcategory__slide--2 arrows_style owl-carousel owl-theme">
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">Meilleurs ventes</span>
 											</div>
@@ -592,7 +600,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">robin parrish</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -620,8 +628,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box color--2">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -629,7 +637,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">The Remainng</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -657,8 +665,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -666,7 +674,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">Lando</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$50.00</li>
 											</ul>
 											<div class="action">
@@ -694,8 +702,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -703,7 +711,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">Doctor Wldo</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -731,8 +739,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALER</span>
 											</div>
@@ -740,7 +748,7 @@
 										<div class="product__content content--center content--center">
 											<h4><a href="single-product.html">Animals Life</a></h4>
 											<ul class="prize d-flex">
-												<li>$50.00</li>
+												<li class="new_prize">$50.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -768,8 +776,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALER</span>
 											</div>
@@ -777,7 +785,7 @@
 										<div class="product__content content--center content--center">
 											<h4><a href="single-product.html">Olio Madu</a></h4>
 											<ul class="prize d-flex">
-												<li>$50.00</li>
+												<li class="new_prize">$50.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -809,13 +817,13 @@
 							<div class="section__title text-center">
 								<h2 class="title__be--2">autres produits</h2>
 							</div>
-							<div class="row mt--60">
+							<div class="row mt--60" id="autresProduits">
 								<div class="productcategory__slide--2 arrows_style owl-carousel owl-theme">
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">meilleurs ventes</span>
 											</div>
@@ -823,7 +831,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">robin parrish</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -851,8 +859,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/3.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/4.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box color--2">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -860,7 +868,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">The Remainng</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -888,8 +896,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/7.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/8.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -897,7 +905,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">Lando</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$50.00</li>
 											</ul>
 											<div class="action">
@@ -925,8 +933,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/9.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/10.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">HOT</span>
 											</div>
@@ -934,7 +942,7 @@
 										<div class="product__content content--center">
 											<h4><a href="single-product.html">Doctor Wldo</a></h4>
 											<ul class="prize d-flex">
-												<li>$35.00</li>
+												<li class="new_prize">$35.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -962,8 +970,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/11.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/2.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALER</span>
 											</div>
@@ -971,7 +979,7 @@
 										<div class="product__content content--center content--center">
 											<h4><a href="single-product.html">Animals Life</a></h4>
 											<ul class="prize d-flex">
-												<li>$50.00</li>
+												<li class="new_prize">$50.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -999,8 +1007,8 @@
 									<!-- Start Single Product -->
 									<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 										<div class="product__thumb">
-											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image"></a>
-											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image"></a>
+											<a class="first__img" href="single-product.html"><img src="images/books/1.jpg" alt="product image" class="img_produit"></a>
+											<a class="second__img animation1" href="single-product.html"><img src="images/books/6.jpg" alt="product image" class="img_produit"></a>
 											<div class="hot__box">
 												<span class="hot-label">BEST SALER</span>
 											</div>
@@ -1008,7 +1016,7 @@
 										<div class="product__content content--center content--center">
 											<h4><a href="single-product.html">Olio Madu</a></h4>
 											<ul class="prize d-flex">
-												<li>$50.00</li>
+												<li class="new_prize">$50.00</li>
 												<li class="old_prize">$35.00</li>
 											</ul>
 											<div class="action">
@@ -1278,6 +1286,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/plugins.js"></script>
 	<script src="js/active.js"></script>
+	<script src="js/single-product.js"></script>
 	
 </body>
 </html>
