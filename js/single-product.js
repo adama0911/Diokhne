@@ -315,19 +315,23 @@
 				(document.querySelector(".details_prod")).textContent = details_prod;
 				((wn__single__product).querySelector(".tocart")).addEventListener("click", function(e){
 					e.preventDefault();
-					url = link+ 'home/achat';
-					dt = "params="+ JSON.stringify({opt:"cart",idProd: parseInt(rep.idProd), tel: ((wn__single__product).querySelectorAll(".tel")).value, email: ((wn__single__product).querySelectorAll(".email")).value, qty: ((wn__single__product).querySelectorAll(".qty")).value})
+					url = link+ 'home/vendre';
+					dt = "email="+(document.querySelector("#emailInput")).value+"&tel="+(document.querySelector("#telInput")).value+"&quantite="+ (document.querySelector("#qtyInput")).value+"&idProd="+ parseInt(rep.idProd);
 					http(url,'POST',dt).then(
 						function(response) {
-							console.log(response);
-							// window.location.href = "cart.html";
+							if ((JSON.parse(response)).datas.message=="OK") {
+								(productmodal.querySelector(".reponseOK")).textContent = 'Bien enrengisté , nous vous contacterons pour la confirmation';
+							}else{
+								(productmodal.querySelector(".reponseNO")).textContent = 'Erreur lors de l\'enregistrement.'
+
+							}
 						},
 
 						function(error) {
 						  	console.error("Failed!", error);
 						}
-					);	
-					console.log('cart');
+					);
+				
 				},false);
 				
 				

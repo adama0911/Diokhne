@@ -141,7 +141,7 @@
 			console.log(trs[i]);
 		}
 
-		url = link + 'home/produits';
+		url = link + 'admin/liste-commandes';
 
 		http(url,'POST',dt).then(
 			function(response) {

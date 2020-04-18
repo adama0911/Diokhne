@@ -192,7 +192,6 @@
 
 						if((nvpItems[i]).querySelector(".modal-view") != null){
 							((nvpItems[i]).querySelector(".modal-view")).addEventListener("click", function(){
-								console.log(datas[i]);
 								src = (datas[i]).image;
 								prixOld = (datas[i]).prixOld;
 								prix = (datas[i]).prix;
@@ -204,11 +203,14 @@
 								(productmodal.querySelector(".img_modal")).setAttribute('src',src);
 								(productmodal.querySelector(".addtocart-btn")).addEventListener("click", function(e){
 									e.preventDefault();
-									url = link+ 'home/achat';
-									dt = "params="+ JSON.stringify({opt:"cart",quantite: (productmodal.querySelector(".quantite_prod")).value,idProd: parseInt((datas[i]).idProd)})
+									url = link+ 'home/vendre';
+									dt = "email="+(productmodal.querySelector(".email_prod")).value+"&tel="+(productmodal.querySelector(".telephone_prod")).value+"&quantite="+ (productmodal.querySelector(".quantite_prod")).value+"&idProd="+ parseInt((datas[i]).idProd);
+									console.log('dt',dt);
 									http(url,'POST',dt).then(
 										function(response) {
-											if (datas[i].message=="OK") {
+											console.log('response',(JSON.parse(response)).datas);
+
+											if ((JSON.parse(response)).datas.message=="OK") {
 												(productmodal.querySelector(".reponseOK")).textContent = 'Bien enrengisté , nous vous contacterons pour la confirmation';
 											}else{
 												(productmodal.querySelector(".reponseNO")).textContent = 'Erreur lors de l\'enregistrement.'
@@ -220,7 +222,6 @@
 										  	console.error("Failed!", error);
 										}
 									);
-									console.log(datas[i]);
 								});
 
 													
@@ -317,7 +318,6 @@
 
 						if((allProductsItems[i]).querySelector(".modal-view") != null){
 							((allProductsItems[i]).querySelector(".modal-view")).addEventListener("click", function(e){
-								console.log(datas[i]);
 								src = (datas[i]).image;
 								prixOld = (datas[i]).prixOld;
 								prix = (datas[i]).prix;
@@ -329,20 +329,26 @@
 								(productmodal.querySelector(".img_modal")).setAttribute('src',src);
 								(productmodal.querySelector(".addtocart-btn")).addEventListener("click", function(e){
 									e.preventDefault();
-									url = link+ 'home/achat';
-									dt = "params="+ JSON.stringify({opt:"cart",quantite: (productmodal.querySelector(".quantite_prod")).value,idProd: parseInt((datas[i]).idProd)})
+									url = link+ 'home/vendre';
+									dt = "email="+(productmodal.querySelector(".email_prod")).value+"&tel="+(productmodal.querySelector(".telephone_prod")).value+"&quantite="+ (productmodal.querySelector(".quantite_prod")).value+"&idProd="+ parseInt((datas[i]).idProd);
+									console.log('dt',dt);
 									http(url,'POST',dt).then(
 										function(response) {
-											console.log(response);
-											(productmodal.querySelector(".reponseOK")).textContent = 'Bien enrengisté , nous vous contacterons pour la confirmation';
-											(productmodal.querySelector(".reponseNO")).textContent = 'Erreur lors de l\'enregistrement.'
+											console.log('response',(JSON.parse(response)).datas);
+
+											if ((JSON.parse(response)).datas.message=="OK") {
+												(productmodal.querySelector(".reponseOK")).textContent = 'Bien enrengisté , nous vous contacterons pour la confirmation';
+											}else{
+												(productmodal.querySelector(".reponseNO")).textContent = 'Erreur lors de l\'enregistrement.'
+
+											}
 										},
 
 										function(error) {
 										  	console.error("Failed!", error);
 										}
 									);
-									console.log(datas[i]);
+							
 								});					
 								
 							});
@@ -437,7 +443,6 @@
 
 						if((bestSellerItems[i]).querySelector(".modal-view") != null){
 							((bestSellerItems[i]).querySelector(".modal-view")).addEventListener("click", function(e){
-								console.log(datas[i]);
 								src = (datas[i]).image;
 								prixOld = (datas[i]).prixOld;
 								prix = (datas[i]).prix;
@@ -449,19 +454,25 @@
 								(productmodal.querySelector(".img_modal")).setAttribute('src',src);
 								(productmodal.querySelector(".addtocart-btn")).addEventListener("click", function(e){
 									e.preventDefault();
-									url = link+ 'home/achat';
-									dt = "params="+ JSON.stringify({opt:"cart",tel:(productmodal.querySelector(".telephone_prod")).value,email: (productmodal.querySelector(".email_prod")).value,quantite: (productmodal.querySelector(".quantite_prod")).value,idProd: parseInt((datas[i]).idProd)})
+									url = link+ 'home/vendre';
+									dt = "email="+(productmodal.querySelector(".email_prod")).value+"&tel="+(productmodal.querySelector(".telephone_prod")).value+"&quantite="+ (productmodal.querySelector(".quantite_prod")).value+"&idProd="+ parseInt((datas[i]).idProd);
+									console.log('dt',dt);
 									http(url,'POST',dt).then(
 										function(response) {
-											console.log(response);
-											(productmodal.querySelector(".reponseOK")).textContent = 'Bien enrengisté , nous vous contacterons pour la confirmation';
+											console.log('response',(JSON.parse(response)).datas);
+
+											if ((JSON.parse(response)).datas.message=="OK") {
+												(productmodal.querySelector(".reponseOK")).textContent = 'Bien enrengisté , nous vous contacterons pour la confirmation';
+											}else{
+												(productmodal.querySelector(".reponseNO")).textContent = 'Erreur lors de l\'enregistrement.'
+
+											}
 										},
 
 										function(error) {
 										  	console.error("Failed!", error);
 										}
 									);
-									console.log(datas[i]);
 								});					
 								 (productmodal.querySelector(".quantite_prod")).value
 							});
